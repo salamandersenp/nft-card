@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0D1A2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.font-blue{
+    color: #89AAD7;
+}
+.container{
+    background-color: #15273F;
+    border-radius: 20px;
+    height: 70%;
+    width: 20%;
+    padding: 25px;
+}
+.upper-side{
+    background-image: url(./images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55%;
+    border-radius: 10px;
+}
+.eye{
+    display: none;
+}
+.upper-side:hover .eye{
+    width: 100%;
+    height: 100%;
+    background-color: #1CF3EE;
+    cursor: pointer;
+    opacity: .6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-side{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lower-side h2{
+    margin-top: 20px;
+}
+.lower-side h2:hover{
+    color: #1CF3EE;
+    cursor: pointer;
+}
+.text{
+    letter-spacing: .7px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+.value{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+.clock,.eth{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.eth{
+    color: #33F0F4;
+    font-weight: 600;
+}
+.creator{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.creator span{
+    color: white;
+}
+.creator span:hover{
+    color: #1CF3EE;
+    cursor: pointer;
+}
+.avatar{
+    border-radius: 50%;
+    border: 1px solid white;
+    background-image: url(./images/image-avatar.png);
+    background-position: center;
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        height: 150vh;
+        align-items: baseline;
+    }
+    .container{
+        width: 90%;
+        height: 52%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+}
