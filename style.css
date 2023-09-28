@@ -21,6 +21,7 @@ main{
     height: 70%;
     width: 20%;
     padding: 25px;
+    overflow: auto;
 }
 .upper-side{
     background-image: url(./images/image-equilibrium.jpg);
